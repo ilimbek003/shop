@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.svg" />
+    <meta id="viewport" name="viewport" content="width=1280, initial-scale=1" />
+    <meta content="true" name="HandheldFriendly" />
+    <meta content="width" name="MobileOptimized" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="OPOP" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <title>OPOP - Интернет магазин</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script>
+      var sw = screen.width;
+      var sh = screen.height;
+      if (window.matchMedia("(orientation: landscape)").matches) {
+        var fw = sh;
+      } else {
+        var fw = sw;
+      }
+      if (fw < 768) {
+        var mvp = document.getElementById("viewport");
+        mvp.setAttribute("content", "width=device-width,initial-scale=1");
+      }
+    </script>
+  </body>
+</html>

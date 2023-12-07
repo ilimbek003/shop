@@ -1,0 +1,26 @@
+
+
+
+
+.css-jcz15c-MuiFormControl-root-MuiTextField-root{
+    box-shadow: none!important;
+    width: 100% !important;
+    border-radius: 8px!important;
+}
+.css-1kei3t8-MuiFormControl-root-MuiTextField-root{
+    box-shadow: none!important;
+    width: 100% !important;
+    border-radius: 8px!important;
+}
+
+.input-file {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    opacity: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+
