@@ -10,6 +10,7 @@ const Wholesalers = ({ t }) => {
       <section>
         <Container maxWidth="xl">
           <Typography
+          
             fontSize={{ xs: 24, md: 32 }}
             mt={{ xs: 4, md: 8 }}
             fontWeight="700"
