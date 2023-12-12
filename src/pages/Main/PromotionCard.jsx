@@ -59,9 +59,9 @@ const PromotionCard = ({ item, t, promotion, setCartSum, cartSum }) => {
           product_variations: variant.id,
         })
       );
-    } else navigate('/auth');
+    } else navigate("/auth");
   };
-
+  console.log(item.product_variation);
   return (
     <>
       <Alertt open={open} setOpen={setOpen} />
@@ -142,7 +142,7 @@ const PromotionCard = ({ item, t, promotion, setCartSum, cartSum }) => {
                 } else setFav({ open: false, fav: !fav.fav });
 
                 dispatch(addOrDeleteToFavorites({ product_id: item.id }));
-              } else navigate('/auth');
+              } else navigate("/auth");
             }}
           >
             {fav.fav ? <FavIcon1 /> : <FavIcon2 />}

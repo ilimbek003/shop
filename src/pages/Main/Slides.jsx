@@ -16,7 +16,6 @@ const Slides = () => {
 
   const theme = useTheme();
   const md = useMediaQuery(theme.breakpoints.down(768));
-
   return (
     <Box component="section" pt={3}>
       <Container
@@ -54,7 +53,7 @@ const Slides = () => {
                     height: { xs: 140, md: 396 },
                     objectFit: "cover",
                   }}
-                  src={!md ? item.mobile : item.desktop}
+                  src={!md ? item.banner : item.banner}
                   width="100%"
                   alt=""
                 />

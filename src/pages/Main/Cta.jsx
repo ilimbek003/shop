@@ -62,7 +62,7 @@ const Cta = ({ t, setLoading }) => {
           <Box
             sx={{
               height: 191,
-              bgcolor: "#8F27C6",
+              bgcolor: "#EE5922",
               borderRadius: "16px",
               display: "flex",
               alignItems: "center",
